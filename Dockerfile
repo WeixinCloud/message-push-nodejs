@@ -19,7 +19,5 @@ RUN npm install
 # 将当前目录（dockerfile所在目录）下所有文件都拷贝到工作目录下
 COPY . /app
 
-RUN export NODE_EXTRA_CA_CERTS=/app/cert/certificate.crt
-
 # 执行启动命令
 CMD ["npm", "start"]

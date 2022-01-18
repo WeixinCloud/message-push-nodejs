@@ -21,7 +21,7 @@ app.all('/', async (req, res) => {
     console.log('==========')
 
     const headers = req.headers
-    const weixinAPI = `https://api.weixin.qq.com/cgi-bin/message/custom/send`
+    const weixinAPI = `http://api.weixin.qq.com/cgi-bin/message/custom/send`
     const payload = {
         touser: headers['x-wx-openid'],
         msgtype: 'text',
