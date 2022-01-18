@@ -15,6 +15,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 const client = axios.default
 
 app.all('/', async (req, res) => {
+    console.log('==========')
+    console.log('收到消息：')
+    console.log(req.body)
+    console.log('==========')
+
     const headers = req.headers
     const weixinAPI = `https://api.weixin.qq.com/cgi-bin/message/custom/send`
     const payload = {
@@ -26,7 +31,12 @@ app.all('/', async (req, res) => {
     }
     // dispatch to wx server
     const result = await client.post(weixinAPI, payload)
-    console.log('received request', req.body, result.data)
+
+    console.log('==========')
+    console.log('发送回复结果：')
+    console.log(result.data)
+    console.log('==========')
+
     res.send('success')
 });
 
