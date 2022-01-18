@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 const client = axios.default
 
-const indexPage = fs.readFileSync('index.html')
+const indexPage = fs.readFileSync('index.html', 'utf-8')
 
 app.get('/', async (req, res) => {
     res.send(indexPage)
