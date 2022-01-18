@@ -5,7 +5,7 @@
 
 微信云托管·云调用示例，基于 Node.js Express 框架搭建，实现小程序、公众号简易的接收、回复消息功能。
 
-![](https://qcloudimg.tencent-cloud.cn/raw/08f0ba7c50ad31e0e6017b27258b72b2.png)
+![](https://qcloudimg.tencent-cloud.cn/raw/ae09619172a6ebb09bbd4a5e69c43290.png)
 
 ## 快速开始
 
