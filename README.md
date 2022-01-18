@@ -1,6 +1,6 @@
 # 微信云托管·云调用示例（Node.js）
 
-[![GitHub license](https://img.shields.io/github/license/WeixinCloud/wxcloudrun-wxapi-nodejs)](https://github.com/WeixinCloud/message-push-nodejs)
+[![GitHub license](https://img.shields.io/github/license/WeixinCloud/message-push-nodejs)](https://github.com/WeixinCloud/message-push-nodejs)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/WeixinCloud/message-push-nodejs/express)
 
 微信云托管·云调用示例，基于 Node.js Express 框架搭建，实现小程序、公众号简易的接收、回复消息功能。
