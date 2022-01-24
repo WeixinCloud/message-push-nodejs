@@ -21,6 +21,11 @@ app.get('/', async (req, res) => {
 })
 
 app.post('/', async (req, res) => {
+    // 没有x-wx-source头的，不是微信的来源，不处理
+    if (!req.headers['x-wx-source']) {
+        res.status(400).send('Invalid request source')
+        return
+    }
     console.log('==========')
     console.log('收到消息：')
     console.log(req.body)
